@@ -10,6 +10,7 @@ for i_episode in range(20):
         else:
             action = 0
         observation, reward, done, info = env.step(action)
+        print(reward)
         if done:
             print("Episode finished after {} timesteps".format(t+1))
             break
